@@ -1,0 +1,21 @@
+﻿@if(TempData["Success"]!= null)
+{
+
+    <div class="p-3 bg-Success">
+		<h6 class="text-white">@TempData["Success"]</h6>
+	</div>
+
+	
+}
+@if(TempData["Edit"]!= null)
+{
+	<div class="p-3 bg-primary">
+		<h6 class="text-white">@TempData["Edit"]</h6>
+	</div>
+}
+@if(TempData["Delete"]!= null)
+{
+	<div class="p-3 bg-danger">
+		<h6 class="text-white">@TempData["Delete"]</h6>
+	</div>
+}
